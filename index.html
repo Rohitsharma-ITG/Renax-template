@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <title>RENAX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.png">
+
+</head>
+
+<body  id="top_view">
+ <!-- pop up rent car -->
+    <main class="popup_main">
+        <div class="popup_container">
+          <div class="popup_body">
+            <div class="popup_top">
+                <h5>Booking Form</h5>
+                <div class="pop_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="popup_info">
+                <div class="popup_inputs">
+                    <input name="name" type="text" placeholder="Full Name *" required="">
+                </div>
+                <div class="popup_inputs">
+                    <input name="email" type="email" placeholder="Email *" required="">
+                </div>
+                <div class="popup_inputs">
+                    <input name="phone" type="number" placeholder="Phone *" required="">
+                </div>
+                <div class="popup_inputs">
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed()"><span class="submit_1">Convertible</span><span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption">
+                            <li class="option first-text" onclick="hindiLang()">Choose Car Type</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup_inputs">
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed_2()"><span class="submit_2">Convertible</span><span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption_2">
+                            <li class="option first-text" onclick="hindiLang()">Convertible</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup_inputs calender">
+                    <input name="name" type="date" placeholder="Full Name *" required="">
+                </div>
+                <div class="popup_inputs">
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed_3()"><span class="submit_1">Convertible</span><span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption_3">
+                            <li class="option first-text" onclick="hindiLang()">Choose Car Type</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup_inputs calender">
+                    <input name="name" type="date" placeholder="Full Name *" required="">
+                </div>
+                <div class="popuptextarea">
+                    <textarea name="message" cols="30" rows="4" placeholder="Additional Note"></textarea>
+                </div>
+                <div class="popupbtn">
+                    <a href="#">Rent now </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+<!-- heder -->
+    <header>
+        <main class="container_main">
+            <div class="container header_main">
+                <div class="logo-wrap">
+                    <a href="http://127.0.0.1:5500/home.html">
+                        <img id="logo_head" src="images/header-logo-1.png" alt="logo" width="130" height="18">
+                    </a>
+                </div>
+                <div class="head_right">
+                    <nav class="main_menu">
+                        <ul class="main_menu_ul">
+                            <li class="drop_down"><a class="main_menu_anchor heder-first" href="#">Home<i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_ul">
+                                        <li><a class="main_menu_anchor sub_menu_anchor heder-first" href="#">Slider 01</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider 02</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 01</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 02</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slidshow </a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid background</a>
+                                        </li>
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a>
+                                                    </li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slid
+                                                            show</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid
+                                                            background</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="main_menu_anchor" href="#">about </a></li>
+                            <li class="drop_down"><a class="main_menu_anchor" href="#">services <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_ul">
+                                        <li><a class="main_menu_anchor sub_menu_anchor heder-first" href="#">Slidshow </a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid background</a>
+                                        </li>
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            02</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="drop_down"><a class="main_menu_anchor" href="#">cars <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_ul">
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor heder-first" href="#">image
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a>
+                                                    </li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slid
+                                                            show</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid
+                                                            background</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a></li>
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a>
+                                                    </li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slid
+                                                            show</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid
+                                                            background</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a>
+                                                    </li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slid
+                                                            show</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid
+                                                            background</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="drop_down"><a class="main_menu_anchor" href="#">pages <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_ul">
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider 01</a></li>
+                                        <li class="child_drop_down"><a class="main_menu_anchor sub_menu_anchor"
+                                                href="#">onepage <i class="fa-solid fa-angle-right"></i></a>
+                                            <div class="child_sub_menu">
+                                                <ul class="sub_menu_ul">
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            01</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">image
+                                                            02</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a>
+                                                    </li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slid
+                                                            show</a></li>
+                                                    <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid
+                                                            background</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider 02</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 01</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 02</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#"> video</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slidshow </a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">grid background</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="drop_down"><a class="main_menu_anchor" href="#">blog <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_ul">
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider 01</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">Slider 02</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 01</a></li>
+                                        <li><a class="main_menu_anchor sub_menu_anchor" href="#">image 02</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="main_menu_anchor" href="#">contact </a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_contact">
+                        <div class="con_icon">
+                            <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+                        </div>
+                        <div class="header_contact_detail">
+                            <p>Need help?</p>
+                            <a href="#">855 100 4444</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </main>
+    </header>
+<!-- banner with slides -->
+    <div class="banner_slider">
+        <div class="banner-img banner-1">
+            <main class="container_main banner_main">
+                <div class="container banner_inner">
+                    <div class="banner_text">
+                        <h6>* Premium</h6>
+                        <h2>Rental Car</h2>
+                        <h5>Bentley Bentayga <span>$600 <i>/ day</i></span></h5>
+                        <div class="banner_button">
+                            <a class="banner-btn view-btn" href="#">View Details <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                            <a class="banner-btn rent-btn popup_btn" href="#">rent now <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="banner-img  banner-2">
+            <main class="container_main banner_main">
+                <div class="container banner_inner">
+                    <div class="banner_text">
+                        <h6>* Premium</h6>
+                        <h2>Rental Car</h2>
+                        <h5>Bentley Bentayga <span>$600 <i>/ day</i></span></h5>
+                        <div class="banner_button">
+                            <a class="banner-btn view-btn" href="#">View Details <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                            <a class="banner-btn rent-btn popup_btn" href="#">rent now <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="banner-img  banner-3">
+            <main class="container_main banner_main">
+                <div class="container banner_inner">
+                    <div class="banner_text">
+                        <h6>* Premium</h6>
+                        <h2>Rental Car</h2>
+                        <h5>Bentley Bentayga <span>$600 <i>/ day</i></span></h5>
+                        <div class="banner_button">
+                            <a class="banner-btn view-btn" href="#">View Details <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                            <a class="banner-btn rent-btn popup_btn" href="#">rent now <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+<!-- image with text -->
+    <section class="container_main">
+        <div class="container">
+            <div class="img_with_text">
+                <div class="sec_2_text">
+                    <h6>Rentax</h6>
+                    <div class="main_heading">
+                        <h2>We Are More Than <br> <span>A Car Rental Company</span></h2>
+                    </div>
+                    <p>Car repair quisque sodales dui ut varius vestibulum drana tortor turpis porttiton tellus eu
+                        euismod nisl massa nutodio in the miss volume place urna lacinia eros nunta urna mauris vehicula
+                        rutrum in the miss on volume interdum.</p>
+                    <div class="sec_2_check">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Sports and Luxury Cars</p>
+                    </div>
+                    <div class="sec_2_check">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Economy Cars</p>
+                    </div>
+                    <div class="univ_btn">
+                        <a class="banner-btn view-btn popup_btn" href="#">rent now <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+                <div class="sec_2_img_div">
+                    <div class="sec_2_img">
+                        <img src="images/sec-2-img.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <i class="ri-play-line"></i>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- horinzontle line  -->
+    <div class="hr-line container_main">
+        <div class="line">
+        </div>
+    </div>
+<!-- website sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>What We Do</h6>
+            <h2>Our <span class="head-main">Services</span></h2>
+        </div>
+    </main>
+<!-- slide services -->
+    <main class="container_main">
+        <div class="container">
+            <div class="sec_4_slider">
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-4-1.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4>01</h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_4_head">
+                            <h4><a href="#">VIP Transfer</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-4-2.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4>02</h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_4_head">
+                            <h4><a href="#">VIP Transfer</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-4-3.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4>03</h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_4_head">
+                            <h4><a href="#">VIP Transfer</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-4-4.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4>04</h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_4_head">
+                            <h4><a href="#">VIP Transfer</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+<!-- background img with inputs -->
+    <section class="section_bg_img">
+        <main class="container_main">
+            <div class="container">
+                <div class="sec_5_head">
+                    <h6>Rent Now</h6>
+                    <h2>Book Auto Rental</h2>
+                </div>
+                <div class="sec_5_mian">
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed()"><span class="submit_1">Convertible</span><span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption">
+                            <li class="option first-text" onclick="hindiLang()">Choose Car Type</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed_2()"><span class="submit_2">Convertible</span><span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption_2">
+                            <li class="option first-text" onclick="hindiLang()">Convertible</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                    <div class="select-option calender">
+                        <input class="selected" type="date">
+                    </div>
+                    <div class="select-option">
+                        <p class="selected" onclick="selecTed_3()"><span class="submit_3">Convertible</span> <span><i
+                                    class="fa-solid fa-angle-down"></i></span> </p>
+                        <ul class="alloption_3">
+                            <li class="option first-text" onclick="hindiLang()">Choose Car Type</li>
+                            <li class="option" onclick="engLang()">All</li>
+                            <li class="option" onclick="germanLang()">Luxury Car</li>
+                            <li class="option" onclick="engLang()">SUVs</li>
+                            <li class="option" onclick="germanLang()">Sports Cars</li>
+                        </ul>
+                    </div>
+                    <div class="select-option calender">
+                        <input class="selected input_sele_4" type="date">
+                    </div>
+                    <div class="univ_btn_4">
+                        <a class="banner-btn view-btn popup_btn" href="#">rent now</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+<!-- sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>Select Your Car</h6>
+            <h2>Luxury <span class="head-main">Car Fleet</span></h2>
+        </div>
+    </main>
+<!-- cars slider -->
+    <section class="container_main">
+        <div class="sec_5">
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec_5_1.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec-5-2.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec-5-3.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec-5-4.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec-5-4.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_5_outer">
+                <div class="sec_5_bg">
+                    <div class="sec_5_img">
+                        <img src="images/sec-5-6.png" alt="image">
+                    </div>
+                    <div class="sec_5_text">
+                        <div class="sec_5_inner">
+                            <div class="sec_5_left">
+                                <h3><a href="#">Bentley Bentayga</a></h3>
+                                <div class="sec_5_icon">
+                                    <span><i class="fa-solid fa-car"></i> 4 Seat</span>
+                                    <span><i class="fa-solid fa-gear"></i> Auto</span>
+                                    <span><i class="fa-solid fa-briefcase"></i> 2 Bags</span>
+                                    <span><i class="fa-solid fa-user"></i> Age 25</span>
+                                </div>
+                            </div>
+                            <div class="sec_5_right">
+                                <div class="univ_btn_5">
+                                    <a class="banner-btn view-btn" href="#">details</a>
+                                </div>
+                                <div class="sec_5_price">
+                                    <span class="color_orange">
+                                        <h3>$600</h3>
+                                    </span>
+                                    <p>/day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- horinzontle line  -->
+    <div class="hr-line container_main">
+        <div class="line">
+        </div>
+    </div>
+<!-- sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>Categories</h6>
+            <h2>Rental <span class="head-main">Car Types</span></h2>
+        </div>
+    </main>
+<!-- csrs slide in 3 column -->
+    <main class="container_main pd-b-50 ">
+        <div class="container">
+            <div class="sec_4_slider section_6">
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-1.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">Luxury Cars</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-2.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">SUV</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-3.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">Sports car</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-4.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">Luxury Cars</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-5.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">Luxury Cars</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img shadow_none">
+                        <img src="images/sec-6-6.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_6_head">
+                            <h4><a href="#">Luxury Cars</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+<!-- horinzontle line  -->
+    <div class="hr-line container_main">
+        <div class="line">
+        </div>
+    </div>
+<!-- sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>Steps</h6>
+            <h2>Car Rental <span class="head-main">Process</span></h2>
+        </div>
+    </main>
+<!-- multicolumn -->
+    <main class="container_main">
+        <div class="container">
+            <div class="section_7_main">
+                <div class="slide_7">
+                    <div class="sec_7_img">
+                        <div class="sec_7_text">
+                            <h2> Choose A Car</h2>
+                            <p>View our range of cars, find your perfect car for the coming days.</p>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_icon">
+                                <h4>01.</h4>
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_7">
+                    <div class="sec_7_img">
+                        <div class="sec_7_text">
+                            <h2> Choose A Car</h2>
+                            <p>View our range of cars, find your perfect car for the coming days.</p>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_icon">
+                                <h4>02.</h4>
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_7">
+                    <div class="sec_7_img">
+                        <div class="sec_7_text">
+                            <h2> Choose A Car</h2>
+                            <p>View our range of cars, find your perfect car for the coming days.</p>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_icon">
+                                <h4>03.</h4>
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+<!-- small peragraph -->
+    <div class="local-pera">
+        <p><span>i</span> If you've never rented a car before, we'll guide you through the process.</p>
+    </div>
+<!-- background image with video -->
+    <section class="section_8_bg_img">
+        <main class="container_main">
+            <div class="container sec_8_inner">
+                <div class="heading">
+                    <h6>Explore</h6>
+                    <h2>Car <span class="head-main">Promo </span> Video</h2>
+                </div>
+                <div class="section_8_btn">
+                    <a href="https://youtu.be/1LxcTt1adfY">
+                        <i class="ri-play-line"></i>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </section>
+<!-- sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>Testimonials</h6>
+            <h2>What Clients Say</h2>
+        </div>
+    </main>
+<!-- multicolumn -->
+    <main class="container_main pd-b-50">
+        <div class="container">
+            <div class="section_9_main">
+                <div class="slide_7">
+                    <div class="sec_9_img">
+                        <div class="sec_9_text">
+                            <div class="sec_9_quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss
+                                drana is lorem fermen nunta urnase mauris in the interdum.
+                            </p>
+                        </div>
+                        <div class="sec_9_stardiv">
+                            <div class="sec_9_star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="star_svg_top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                            <div class="star_svg_bottum">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_9_icon">
+                                <img src="images/sec-9-1.png" alt="image">
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="sec_9_heading">
+                                    <h4>Olivia Brown</h4>
+                                    <p>customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_7">
+                    <div class="sec_9_img">
+                        <div class="sec_9_text">
+                            <div class="sec_9_quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss
+                                drana is lorem fermen nunta urnase mauris in the interdum.
+                            </p>
+                        </div>
+                        <div class="sec_9_stardiv">
+                            <div class="sec_9_star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="star_svg_top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                            <div class="star_svg_bottum">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_9_icon">
+                                <img src="images/sec-9-2.png" alt="image">
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="sec_9_heading">
+                                    <h4>Olivia Brown</h4>
+                                    <p>customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_7">
+                    <div class="sec_9_img">
+                        <div class="sec_9_text">
+                            <div class="sec_9_quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss
+                                drana is lorem fermen nunta urnase mauris in the interdum.
+                            </p>
+                        </div>
+                        <div class="sec_9_stardiv">
+                            <div class="sec_9_star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="star_svg_top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                            <div class="star_svg_bottum">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_9_icon">
+                                <img src="images/sec-9-3.png" alt="image">
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="sec_9_heading">
+                                    <h4>Olivia Brown</h4>
+                                    <p>customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_7">
+                    <div class="sec_9_img">
+                        <div class="sec_9_text">
+                            <div class="sec_9_quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss
+                                drana is lorem fermen nunta urnase mauris in the interdum.
+                            </p>
+                        </div>
+                        <div class="sec_9_stardiv">
+                            <div class="sec_9_star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="star_svg_top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                            <div class="star_svg_bottum">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-11 h-11">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="play_icon_div">
+                            <div class="play_9_icon">
+                                <img src="images/sec-9-1.png" alt="image">
+                                <div class="svg_top">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svg_bottum">
+                                    <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-11 h-11">
+                                        <path
+                                            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <div class="sec_9_heading">
+                                    <h4>Olivia Brown</h4>
+                                    <p>customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+<!-- horinzontle line -->
+    <div class="hr-line container_main">
+        <div class="line">
+        </div>
+    </div>
+<!-- sections heading -->
+    <main class="container_main">
+        <div class="heading">
+            <h6>Our Blog</h6>
+            <h2>Latest <span class="head-main">News</span></h2>
+        </div>
+    </main>
+<!-- multicoumn with car slider -->
+    <main class="container_main">
+        <div class="container">
+            <div class="sec_4_slider section_6">
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-1.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-2.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-3.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-4.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-5.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sec_4_img">
+                        <img src="images/sec-10-6.png" alt="Image">
+                        <div class="play_icon_div">
+                            <a target="_blank" href="https://youtu.be/1LxcTt1adfY">
+                                <div class="play_icon">
+                                    <h4 class="sec_10_none"><a href="#"><i class="ri-arrow-right-up-line"></i></a></h4>
+                                    <h4 class="sec_10_block">24
+                                        <span>Apr</span>
+                                    </h4>
+                                    <div class="svg_top">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="svg_bottum">
+                                        <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-11 h-11">
+                                            <path
+                                                d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec_10_head">
+                            <h6>Rental</h6>
+                            <h4>Documents required for car rental</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+<!-- banner with text -->
+    <section class="section_11_bg_img">
+        <main class="container_main">
+            <div class="container sec_8_inner">
+                <div class="heading">
+                    <h6>Rent Your Car</h6>
+                    <h2>Interested in Renting?</h2>
+                    <p>Don't hesitate and send us a message.</p>
+                </div>
+                <div class="banner_button">
+                    <a class="banner-btn view-btn" href="#"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                    <a class="banner-btn rent-btn popup_btn" href="#">rent now <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+        </main>
+    </section>
+<!-- logo slides -->
+    <main class="container_main">
+      <div class="container">
+        <div class="slider_12">
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-1.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-2.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-3.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-4.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-5.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-6.png" alt="logo"></a>
+          </div>
+          <div class="slide_12">
+            <a href="#"><img src="images/sec-12-7.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- footer -->
+    <footer>
+     <main class="container_main">
+        <div class="container">
+            <div class="footer-upper">
+                <div class="footer_contact wid-30">
+                    <div class="footer_contact_icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="footer_upper_contact">
+                        <h6>Call us</h6>
+                        <p>+971 52-333-4444</p>
+                    </div>
+                </div>
+                <div class="footer_contact wid-30 footer_contact_border">
+                    <div class="footer_contact_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="footer_upper_contact">
+                        <h6>Write to us</h6>
+                        <p>info@renax.com</p>
+                    </div>
+                </div>
+                <div class="footer_contact wid-40">
+                    <div class="footer_contact_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="footer_upper_contact">
+                        <h6>Address</h6>
+                        <p>Dubai, Water Tower, Office 123</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_footer">
+                <div class="footer_logo_side">
+                    <div class="footer_logo">
+                        <a href="#"><img src="images/header-logo-1.png" alt=""></a>
+                    </div>
+                    <div class="footer_content">
+                        <p>Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</p>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer_links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Car types</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_input">
+                    <h3>Subscribe</h3>
+                    <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.</p>
+                    <div class="footer_input_inner">
+                        <input type="email" placeholder="Email Address">
+                        <button><i class="ri-arrow-right-up-line"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_last">
+                <p>©2024 <a href="#"> DuruThemes.</a> All rights reserved.</p>
+            </div>
+        </div>
+     </main>
+    </footer>
+    
+    <div class="fixed-up">
+        <a href="#top_view"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
